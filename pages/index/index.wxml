@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="main">
+  <view class="title-wrap" >选择图片</view>
+  <view class="title-wrap" style="font-size: 30rpx;padding-right: 40rpx;padding-top: 10rpx;color:gray" bindtap="loadpic">替换</view>  
+</view>
+<view class="menu0" >
+  <view class="menu">
+  <image src="{{images1}}" class="{{index=='0'?'Choose':'noChoose'}}" bindtap="changeColor" data-index="0" data-src1="{{images1}}" aria-label="遥控器"/>
+  <image src="{{images[1]}}" class="{{index=='1'?'Choose':'noChoose'}}" bindtap="changeColor" data-index="1" data-src1="{{images[1]}}" aria-label="散粉" />
+  <image src="{{images[2]}}" class="{{index=='2'?'Choose':'noChoose'}}" bindtap="changeColor" data-index="2" data-src1="{{images[2]}}" aria-label="水杯"/>
+  </view>
+  <view class="menu">
+    <image src="{{images[3]}}" class="{{index=='3'?'Choose':'noChoose'}}" bindtap="changeColor" data-index="3" data-src1="{{images[3]}}" aria-label="银行卡"/>
+    <image src="{{images[4]}}" class="{{index=='4'?'Choose':'noChoose'}}" bindtap="changeColor" data-index="4" data-src1="{{images[4]}}" aria-label="墨镜"/>
+    <image src="{{images[5]}}" class="{{index=='5'?'Choose':'noChoose'}}" bindtap="changeColor" data-index="5" data-src1="{{images[5]}}" aria-label="钥匙"/>
+  </view>
+  <view class="menu">
+    <image src="{{images[6]}}" class="{{index=='6'?'Choose':'noChoose'}}" bindtap="changeColor" data-index="6" data-src1="{{images[6]}}" aria-label="护手霜"/>
+    <image src="{{images[7]}}" class="{{index=='7'?'Choose':'noChoose'}}" bindtap="changeColor" data-index="7" data-src1="{{images[7]}}" aria-label="剪刀"/>
+    <image src="{{images[8]}}" class="{{index=='8'?'Choose':'noChoose'}}" bindtap="changeColor" data-index="8" data-src1="{{images[8]}}" aria-label="鼠标"/>
+  </view>
+</view>
+<view class="weui-media-box__info">
+  <navigator url="/package_oneshot_tracker/pages/camera/camera?tempurl={{tempurl}}" class="marginTop10">
+    <button class="weui-btn" type="primary" aria-label="点击搜寻">Search</button>
+  </navigator>
+ </view>
+
+
